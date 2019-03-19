@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { StarRatingModule } from 'angular-star-rating';
 
 import { AppComponent } from './app.component';
 import { DoctorService } from './_services/doctor.service';
@@ -13,7 +14,7 @@ import { DoctorResolver } from './_resolvers/doctor-resolver';
 
 @NgModule({
   declarations: [AppComponent, DoctorListComponent, DoctorDetailComponent],
-  imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(appRoutes)],
+  imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(appRoutes), StarRatingModule.forRoot()],
   providers: [DoctorService, DoctorListResolver, DoctorResolver],
   bootstrap: [AppComponent],
 })

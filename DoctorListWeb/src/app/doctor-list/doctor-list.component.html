@@ -10,7 +10,17 @@
       <a [routerLink]="['/doctors/', doctor.id]">{{ doctor.name }}</a>
     </div>
     <div class="column">{{ doctor.gender }}</div>
-    <div class="column">{{ doctor.averageRating }}</div>
+    <div class="column">
+      <star-rating
+        [starType]="'svg'"
+        [rating]="doctor.averageRating"
+        [hoverEnabled]="false"
+        [readOnly]="true"
+        [step]="0.5"
+        [showHalfStars]="true"
+      ></star-rating>
+      ({{ doctor.averageRating }})
+    </div>
     <div class="column">{{ doctor.specialties }}</div>
   </div>
 </div>

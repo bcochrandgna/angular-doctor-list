@@ -22,3 +22,16 @@ ul {
   margin-bottom: 0;
   padding-left: 20px;
 }
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+}
+
+.rating-comments {
+  margin-top: 5px;
+}
+
+.rating-container {
+  margin-bottom: 10px;
+}

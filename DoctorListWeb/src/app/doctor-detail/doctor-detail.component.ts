@@ -23,7 +23,6 @@ export class DoctorDetailComponent implements OnInit {
 
   calculateSuperstar(patientRatings) {
     const fiveStartRatings = patientRatings.filter(rating => rating.rating === 5);
-    console.log(Math.floor(fiveStartRatings.length) / Math.floor(patientRatings.length));
     return Math.floor(fiveStartRatings.length) / Math.floor(patientRatings.length) >= 0.85;
   }
 }

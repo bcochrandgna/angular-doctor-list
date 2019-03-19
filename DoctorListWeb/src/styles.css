@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/css-star-rating/css/star-rating.min.css';
+
+.rating {
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+.star-container {
+  margin: 0;
+  margin-right: 5px;
+}

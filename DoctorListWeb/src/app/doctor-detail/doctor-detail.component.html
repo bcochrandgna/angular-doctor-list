@@ -53,12 +53,20 @@
   <div class="info-container">
     <div class="label">Patient Ratings</div>
     <div>
-      <ul>
-        <li *ngFor="let rating of doctor.patientRatings">
-          <div>{{ rating.rating }}</div>
-          <div>{{ rating.comments }}</div>
-        </li>
-      </ul>
+      <div *ngFor="let rating of doctor.patientRatings" class="rating-container">
+        <div class="rating-stars">
+          <star-rating
+            [starType]="'svg'"
+            [rating]="rating.rating"
+            [hoverEnabled]="false"
+            [readOnly]="true"
+            [step]="0.5"
+            [showHalfStars]="true"
+          ></star-rating>
+          ({{ rating.rating }})
+        </div>
+        <div class="rating-comments">{{ rating.comments }}</div>
+      </div>
     </div>
   </div>
 </div>
