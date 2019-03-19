@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="info-container">
+    <div class="label">
+      Name
+    </div>
+    <div>
+      {{ doctor.name }}
+      <span *ngIf="isSuperstar">
+        (Superstar!)
+      </span>
+    </div>
+  </div>
+  <div class="info-container">
+    <div class="label">
+      Gender
+    </div>
+    <div>
+      {{ doctor.gender }}
+    </div>
+  </div>
+  <div class="info-container">
+    <div class="label">
+      Medical School
+    </div>
+    <div>
+      {{ doctor.medicalSchool }}
+    </div>
+  </div>
+  <div class="info-container">
+    <div class="label">
+      Specialties
+    </div>
+    <div>
+      <ul>
+        <li *ngFor="let specialty of doctor.doctorSpecialties">
+          {{ specialty.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="info-container">
+    <div class="label">
+      Languages
+    </div>
+    <div>
+      <ul>
+        <li *ngFor="let language of doctor.doctorLanguages">
+          {{ language.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="info-container">
+    <div class="label">Patient Ratings</div>
+    <div>
+      <ul>
+        <li *ngFor="let rating of doctor.patientRatings">
+          <div>{{ rating.rating }}</div>
+          <div>{{ rating.comments }}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

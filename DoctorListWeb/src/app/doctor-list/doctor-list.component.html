@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="grid-container">
+    <div class="heading">Name</div>
+    <div class="heading">Gender</div>
+    <div class="heading">Avg. Rating</div>
+    <div class="heading">Specialties</div>
+  </div>
+  <div class="grid-container" *ngFor="let doctor of doctors">
+    <div class="column">
+      <a [routerLink]="['/doctors/', doctor.id]">{{ doctor.name }}</a>
+    </div>
+    <div class="column">{{ doctor.gender }}</div>
+    <div class="column">{{ doctor.averageRating }}</div>
+    <div class="column">{{ doctor.specialties }}</div>
+  </div>
+</div>

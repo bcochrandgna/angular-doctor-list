@@ -1,0 +1,24 @@
+.container {
+  border: solid 1px #dddddd;
+}
+.info-container {
+  display: grid;
+  grid-template-columns: 130px 500px;
+}
+
+.info-container > div {
+  padding: 5px;
+  border-bottom: solid 1px #dddddd;
+}
+
+.label {
+  font-weight: 700;
+  background-color: #efefef;
+  text-align: right;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
