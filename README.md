@@ -6,8 +6,9 @@ Initially it was requested to include a Visual Studio project, which should be D
 # structure
 This repository contains two separate projects, one for the API, and one for the Angular SPA application.
 
-DoctorListWeb - This folder contains the Angular web project.
-DoctorListAPI - This folder contains the .NET WebAPI project.
+`DoctorListWeb` - This folder contains the Angular web project.
+
+`DoctorListAPI` - This folder contains the .NET WebAPI project.
 
 # installation
 Since these projects use separate package managers, you will need the following basics to get installed:
@@ -34,11 +35,11 @@ npm install
 ng serve
 ```
 
-This will start the web server on port 4200 (http://localhost:4200)
+This will start the web server on port 4200 (`http://localhost:4200`)
 
-Once the two servers are running, you may browse to http://localhost:4200 to view the web application.
+Once the two servers are running, you may browse to `http://localhost:4200` to view the web application.
 
 # notes
 The web application is not using very many styles other than to format the data properly.  The list is formatted using a grid system as requested along with a single detail page when a record from the list is clicked.
 
-The API uses SQLite to serve data which is locationed under the DoctorListAPI folder and named Doctors.db.  I have included a prefilled database for this review.
+The API uses SQLite to serve data which is located under the `DoctorListAPI` folder and named `Doctors.db`.  I have included a prefilled database for this review.
