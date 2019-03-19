@@ -12,21 +12,27 @@ DoctorListAPI - This folder contains the .NET WebAPI project.
 # installation
 Since these projects use separate package managers, you will need the following basics to get installed:
 
+```
 node (~v10.9.0)
 npm (~6.1.0)
 dotnet (^2.2.104)
+```
 
 Once these are installed, you will need to run the following:
 
+```
 cd DoctorListAPI
 dotnet restore
 dotnet run
+```
 
 This will start the API using Kestrel on port 5000 (http://localhost:5000)
 
+```
 cd DoctorListWeb
 npm install
 ng serve
+```
 
 This will start the web server on port 4200 (http://localhost:4200)
 
